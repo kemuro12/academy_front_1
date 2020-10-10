@@ -10,20 +10,20 @@
 </head>
 <body>
 
-    <div class="header">
-        <header class="menu-bar">
+    <div class="header__background">
+        <header>
             <div class="container">
                 <div class="row">
                      <div class="col-2">
-                         <div class="header_block">
-                             <p>AppSon</p>
+                         <div class="header__logo">
+                            <p>AppSon</p>
                          </div>
                      </div>
                      
                      <div class="col-8 ml-auto align-self-center">
                          <nav>
                              <ul class="menu d-flex justify-content-end ">
-                                 <li class="menu__item active_menu__item"><a href="#">HOME</a></li>
+                                 <li class="menu__item menu__item_active"><a href="#">HOME</a></li>
                                  <li class="menu__item"><a href="#">FEATURES</a></li>
                                  <li class="menu__item"><a href="#">PRICING</a></li>
                                  <li class="menu__item"><a href="#">PAGES</a></li>
@@ -41,19 +41,19 @@
                 <div class="row">
                     <div class="col-12">
                         <h1>Best Desktop App for You</h1>
-                        <p class="text mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quaerat numquam molestiae veritatis reiciendis ex, fugit, enim saepe dolorum, et repudiandae quisquam pariatur ipsa dolore asperiores aliquam obcaecati praesentium placeat! Saepe deserunt facilis tempore aspernatur dignissimos! Repudiandae, quod, distinctio optio similique magnam repellendus corporis ea ab tenetur, quam maiores ipsum!</p>
+                        <p class="home__text mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quaerat numquam molestiae veritatis reiciendis ex, fugit, enim saepe dolorum, et repudiandae quisquam pariatur ipsa dolore asperiores aliquam obcaecati praesentium placeat! Saepe deserunt facilis tempore aspernatur dignissimos! Repudiandae, quod, distinctio optio similique magnam repellendus corporis ea ab tenetur, quam maiores ipsum!</p>
                         <button class="btn button download__button mr-2 mt-4">Download</button>
                         <button class="btn button free__trial_button ml-2 mt-4">Free Trial</button>
                     </div>
 
-                    <div class="mobile_screens">
-                        <div class="mobile_screen mobile_small mobile_left">
+                    <div class="home__mobile-screens">
+                        <div class="home__mobile-screen home__mobile-small home__mobile-left">
                             <div class="screen_1"></div>
                         </div>
-                        <div class="mobile_screen">
+                        <div class="home__mobile-screen">
                             <div class="screen_2"></div>
                         </div>
-                        <div class="mobile_screen mobile_small mobile_right">
+                        <div class="home__mobile-screen home__mobile-small home__mobile-right">
                             <div class="screen_3"></div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
 
     
     <div class="container-fluid features">
-        <div class="row justify-content-center" style="margin-right:0;">
+        <div class="row justify-content-center">
 
             <div class="col-10 col-lg-3">
                 <div class="card mt-5 mt-lg-0">
@@ -73,7 +73,7 @@
                         <img src="img/icon_card_1.png" width="32" alt="Analysis"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">Analysis</h4>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore voluptatibus </p>
+                    <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore voluptatibus </p>
                 </div>
             </div>
 
@@ -83,7 +83,7 @@
                         <img src="img/icon_card_2.png" width="32" alt="Clear Design"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">Clear Design</h4>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
                         <img src="img/icon_card_3.png" width="32" alt="messaging"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">Messaging</h4>
-                    <p class="mt-3">repudiandae praesentium illum. Porro harum tempore ipsam consequatur nulla?</p>
+                    <p class="mt-3 text-secondary">repudiandae praesentium illum. Porro harum tempore ipsam consequatur nulla?</p>
                 </div>
             </div>
             
@@ -101,46 +101,47 @@
     </div>
 
 
-    <div class="container-fluid container-lg">
-        <div class="row rect_back_1 justify-content-end">
+    <div class="container-fluid container-lg features-2">
+        <div class="row features-2_back-1 justify-content-end">
             <div class="col-6 d-none d-md-block"> 
-                <img src="img/rect_1_img_1.png"  class="block_img block_img_1" />
-                <img src="img/rect_1_img_2.png"  class="block_img block_img_2" />
+                <img src="img/rect_1_img_1.png" alt="person" class="features-2__img-1" />
+                <img src="img/rect_1_img_2.png" alt="person" class="features-2__img-2" />
             </div>
     
-            <div class="col-12 col-md-5 text_block">
+            <div class="col-12 col-md-5 features-2__text text-center text-md-left">
                 <h3 class="font-weight-bold">Easy Messaging</h3>
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minima quas molestiae eius repellendus error assumenda atque distinctio voluptatem veritatis, quidem praesentium, blanditiis nobis quod autem velit reprehenderit quisquam molestias sit voluptas nam quae enim. Vero facere culpa ea voluptatem.</p>
                 <a class="mt-2" href="#">Read More &rarr;</a>
             </div>
         </div>
 
-        <div class="row rect_back_2 justify-content-between">
-            <div class="col-12 col-md-5 text_block">
+        <div class="row features-2_back-2 justify-content-around">
+            <div class="col-12 col-md-5 features-2__text  text-center text-md-left">
                 <h3 class="font-weight-bold">Keep In Touch</h3>
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minima quas molestiae eius repellendus error assumenda atque distinctio voluptatem veritatis, quidem praesentium, blanditiis nobis quod autem velit reprehenderit quisquam molestias sit voluptas nam quae enim. Vero facere culpa ea voluptatem.</p>
                 <a class="mt-2" href="#">Read More &rarr;</a>
             </div>
             
             <div class="col-6 d-none d-md-block"> 
-                <img src="img/rect_2_img_1.png"  class="block_img block_img_3" />
-                <img src="img/rect_2_img_2.png"  class="block_img block_img_4" />
+                <img src="img/rect_2_img_1.png" alt="person" class="features-2__img-3" />
+                <img src="img/rect_2_img_2.png" alt="person" class="features-2__img-4" />
             </div>
         </div>
     </div>
 
-    <div class="container-fluid how_work_section">
+    
+    <div class="container-fluid how-work">
         <div class="row">
             <div class="col-12">
                 <h3 class="font-weight-bold">How Does It Works?</h3>
                 <p class="mt-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure ullam sequi eius similique! Iusto.</p>
-                <div class="row mt-5 justify-content-center how_work_info">
-                    <div class="col-6 line d-none d-lg-block"></div>
+                <div class="row mt-5 justify-content-center">
+
+                    <div class="col-6 how-work__line_blue d-none d-lg-block"></div>
                     <div class="col-12"></div>
 
-
-                    <div class="col-10 col-lg-3 mt-5 mt-lg-0 how__card">
-                        <div class="square">
+                    <div class="col-10 col-lg-3 mt-5 mt-lg-0">
+                        <div class="how-work__square_white">
                             <div class="icon" style="background:rgb(15,123,255,0.2);">
                                 <img src="img/icon_item_4.png" width="32" alt="Create account"/>
                             </div>
@@ -149,8 +150,8 @@
                         <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
 
-                    <div class="col-10 col-lg-3 mt-5 mt-lg-0 how__card">
-                        <div class="square">
+                    <div class="col-10 col-lg-3 mt-5 mt-lg-0">
+                        <div class="how-work__square_white">
                             <div class="icon" style="background:rgb(15,123,255,0.2);">
                                 <img src="img/icon_item_5.png" width="32" alt="Confirm Email"/>
                             </div>
@@ -159,8 +160,8 @@
                         <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                     
-                    <div class="col-10 col-lg-3 mt-5 mt-lg-0 how__card">
-                        <div class="square">
+                    <div class="col-10 col-lg-3 mt-5 mt-lg-0">
+                        <div class="how-work__square_white">
                             <div class="icon" style="background:rgb(15,123,255,0.2);">
                                 <img src="img/icon_item_6.png" class="mt-3" width="32" alt="See Result"/>
                             </div>
@@ -173,6 +174,7 @@
             </div>
         </div>
     </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
