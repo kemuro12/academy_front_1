@@ -11,7 +11,7 @@
 <body>
 
     <div class="header__background">
-        <header>
+        <header id="home">
             <div class="container">
                 <div class="row">
                      <div class="col-2">
@@ -23,11 +23,13 @@
                      <div class="col-8 ml-auto align-self-center">
                          <nav>
                              <ul class="menu d-flex justify-content-end ">
-                                 <li class="menu__item menu__item_active"><a href="#">HOME</a></li>
-                                 <li class="menu__item"><a href="#">FEATURES</a></li>
-                                 <li class="menu__item"><a href="#">PRICING</a></li>
-                                 <li class="menu__item"><a href="#">PAGES</a></li>
-                                 <li class="menu__item"><button class="btn button sign__up_button">SIGN UP</button></li>
+                                 <li anchor="home" class="menu__item"><a href="#home">HOME</a></li>
+                                 <li anchor="features" class="menu__item"><a href="#features">FEATURES</a></li>
+                                 <li anchor="pricing" class="menu__item"><a href="#pricing">PRICING</a></li>
+                                 <li anchor="pages" class="menu__item"><a href="#pages">PAGES</a></li>
+                                 <li class="menu__item">
+                                     <button class="button button-blue header__button">SIGN UP</button>
+                                </li>
                                  <li class="menu__item burger">&#9776;</li>
                              </ul>
                          </nav>
@@ -42,8 +44,8 @@
                     <div class="col-12">
                         <h1>Best Desktop App for You</h1>
                         <p class="home__text mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quaerat numquam molestiae veritatis reiciendis ex, fugit, enim saepe dolorum, et repudiandae quisquam pariatur ipsa dolore asperiores aliquam obcaecati praesentium placeat! Saepe deserunt facilis tempore aspernatur dignissimos! Repudiandae, quod, distinctio optio similique magnam repellendus corporis ea ab tenetur, quam maiores ipsum!</p>
-                        <button class="btn button download__button mr-2 mt-4">Download</button>
-                        <button class="btn button free__trial_button ml-2 mt-4">Free Trial</button>
+                        <button class="button button-blue mr-2 mt-4">Download</button>
+                        <button class="button button-transparent ml-2 mt-4">Free Trial</button>
                     </div>
 
                     <div class="home__mobile-screens">
@@ -64,7 +66,7 @@
     </div>
 
     
-    <div class="container-fluid features">
+    <div id="features" class="container-fluid features">
         <div class="row justify-content-center">
 
             <div class="col-10 col-lg-3">
@@ -177,15 +179,15 @@
 
     <div class="pricing">
         <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
+            <div id="pricing" class="row justify-content-center align-items-center">
 
                 <div class="col-10 col-lg-4">
                     <div class="pricing__plan">
                         <h3 class="font-weight-bold">Pricing Plan</h3>
                         <p class="text-secondary mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatum nisi numquam ex necessitatibus odit rem! Atque nostrum ea, non ipsum esse cum eaque pariatur est voluptate distinctio optio aspernatur soluta! Magnam itaque fugiat praesentium! Libero repudiandae corrupti quaerat voluptatum.</p>
                         <div class="pricing__actions mt-4">
-                            <button class="btn button pricing__button_left pricing__button_active">Monthly</button>
-                            <button class="btn button pricing__button_right free__trial_button">Yearly</button>    
+                            <button mounths="1" class="button pricing__button pricing__button_left pricing__button_active">Monthly</button>
+                            <button mounths="12" class="button pricing__button pricing__button_right">Yearly</button>    
                         </div>
                     </div>
                 </div>
@@ -203,8 +205,8 @@
                             <li class="mt-2">50GB Bandwith</li>
                             <li class="mt-2">Free Support</li>
                         </ul>
-                        <p class="price"><span class="dollar">&#36;</span>19.00</p>
-                        <button class="btn button pricing__button_active text-nowrap">Try Now</button>
+                        <p class="price-block"><span class="dollar">&#36;</span><span price="19.00" class="price">19.00</span></p>
+                        <button class="button button-blue text-nowrap">Try Now</button>
                     </div>
                 </div>
 
@@ -221,8 +223,8 @@
                             <li class="mt-2">50GB Bandwith</li>
                             <li class="mt-2">Free Support</li>
                         </ul>
-                        <p class="price"><span class="dollar">&#36;</span>49.00</p>
-                        <button class="btn button free__trial_button text-nowrap">Try Now</button>
+                        <p class="price-block"><span class="dollar">&#36;</span><span price="49.00" class="price">49.00</span></p>
+                        <button class="button button-transparent text-nowrap">Try Now</button>
                     </div>
                 </div>
 
@@ -276,7 +278,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-begin d-none d-lg-block mt-4">
-                        <div class="col-3">
+                        <div class="col-3 paginator">
                             <button class="paginator-button paginator-button__active"></button>
                             <button class="paginator-button"></button>
                             <button class="paginator-button"></button>
@@ -291,7 +293,7 @@
     
     <div class="news">
         <div class="container">
-            <div class="row">
+            <div id="pages" class="row">
                 <div class="col-12 text-center">
                     <h2 class="font-weight-bold">Latest News From Us</h2>
                     <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum cupiditate voluptates fugiat. A numquam voluptates cumque sequi autem vero obcaecati, ipsum eveniet dolor natus?</p>
@@ -371,10 +373,11 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="font-weight-bold">AppSon</h2>
-                    <div class="footer__form mt-4">
+                    <form class="footer__form mt-4">
                         <input class="footer__input" placeholder="Enter Your Email"/>
                         <button class="footer__button">Subscribe</button>
-                    </div>
+                    </form>
+                    <p class="footer__error"></p>
                 </div>
             </div>
         </div>
@@ -407,9 +410,6 @@
         </div>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/classesToggle.js"></script>
 </body>
 </html>
