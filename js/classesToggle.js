@@ -1,5 +1,13 @@
 const clearClass = (className, elems) => elems.forEach(el => el.classList.remove(className))
 
+// header responsive 
+document.querySelector('.burger').addEventListener("click", (e) => {
+    let menu = document.querySelector(".menu");
+    if(menu.classList.contains("menu-responsive")) menu.classList.remove("menu-responsive");
+    else menu.classList.add("menu-responsive");
+})
+// header responsive 
+
 // Header nav menu__item_active controller.
 const headerNavOnChanged = (e = null) => {
     if(e && e.target.tagName !== "A") return;
@@ -33,6 +41,7 @@ document.querySelector('.pricing__actions').addEventListener('click', pricingBut
 
 // Trusted paginator controller.
 const paginatorOnChanged = (e) => {
+    if(e.target.tagName !== "BUTTON") return;
     let buttons = document.querySelectorAll(".paginator button");
     clearClass("paginator-button__active", buttons);
     e.target.classList.add("paginator-button__active");
@@ -45,14 +54,23 @@ let formIsValid = false;
 document.querySelector(".footer__input").addEventListener("blur", (e) => {
     let emailValidator = /@[\s\S]*\./;
     let errorMessage = "Некорректная Почта!";
-    if(!emailValidator.test(e.target.value)) document.querySelector(".footer__error").innerText = errorMessage
-    else document.querySelector(".footer__error").innerText = "";
+    if(!emailValidator.test(e.target.value)) {
+        document.querySelector(".footer__error").innerText = errorMessage;
+        formIsValid = false;
+    } else {
+        document.querySelector(".footer__error").innerText = "";
+        formIsValid = true;
+    }
 })
 
 // Footer form validator.
 
 // Footer form 
 document.querySelector("form").addEventListener("submit", (e) => {
-    console.log(e.preventDefault());
+    e.preventDefault();
+    if(formIsValid){
+        let email = e.target[0].value;
+        //fetch email
+    }   
 })
 // Footer form

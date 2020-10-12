@@ -51,6 +51,7 @@ header{
 ul, li{
     display:block;
 }
+
 .menu__item{
     margin-left:40px;
 }
@@ -66,6 +67,21 @@ ul, li{
 }
 .menu__item_active a{
     color:#0f7bff;
+}
+.menu-responsive{
+    position: relative;
+    top:0;
+    right:-10px;
+    height:auto;
+    padding:10px 0px;
+    background:rgb(15,123,255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu-responsive a{
+    display:block !important; 
+    color:white;
+    font-size:24px;
 }
 .button{
     padding:8px 30px;
@@ -120,16 +136,27 @@ ul, li{
 @media screen and (max-width:993px){
     .menu a{
         display:none;
+        color:rgb(193,193,193)
     }
     .menu button{
         display:none;
     }
+    .menu__item {
+        padding-top:20px;
+    }
+    .menu__item_active a{
+        color:white !important;
+    }
     .burger{
-        display:block;
         cursor:pointer;
+        display: block;
         font-size:28px;
         margin-right:20px;
+        position: absolute;
+        right:0px;
+        top:0;
     }
+     
 }
 
 /* header end */
@@ -167,6 +194,7 @@ ul, li{
 }
 .home__mobile-small{
     width:250px;
+    min-width:125px !important;
     height: 450px;
     margin-top:80px;
 }
@@ -174,8 +202,9 @@ ul, li{
     left:95px;
 }
 .home__mobile-right{
-    right:95px;
+    right:120px;
     z-index:5;
+    background-position-x: -15px;
 }
 .screen_1{
     width:173px;
@@ -199,7 +228,7 @@ ul, li{
     width:173px;
     position: absolute;
     top:40px;
-    left:42px;
+    left:28px;
     height:100%;
     background:url('img/screen_3.png') no-repeat;
     background-size:100%;
@@ -215,14 +244,17 @@ ul, li{
         width:202px;
     }
     .screen_3{
-        width:163px;
+        width:150px;
+        top:43px;
+        left:2px;
     }
-    
-    .mobile_screen{
-        width:415px;
+    .home__mobile-left{
+        left:35px;
     }
-    .mobile_small{
-        width:335px;
+    .home__mobile-right{
+        right:60px;
+        z-index:5;
+        background-position-x: -60px;
     }
 }
 
@@ -237,15 +269,16 @@ ul, li{
     }
     .screen_3{
         width:163px;
+        left:-45px;
     }
-    
-    .mobile_screen{
-        width:685px;
+    .home__mobile-left{
+        left:35px;
     }
-    .mobile_small{
-        width:535px;
+    .home__mobile-right{
+        right:30px;
+        z-index:5;
+        background-position-x: -95px;
     }
-    
 }
 
 
@@ -301,6 +334,20 @@ ul, li{
 .features-2__text{
     margin-top:220px;
 }
+@media screen and (max-width:767px){
+    .features-2__text:last-child h3{
+        color:white;
+    }
+    .features-2__text p{
+        color:black !important;
+        font-weight:600;
+        font-size:17px;
+    }
+    .features-2__text a{
+        color:red;
+    }
+}
+
 
 .features-2__img-1{
     position: absolute;
@@ -335,10 +382,23 @@ ul, li{
 
 .how-work{
     text-align: center;
-    padding-top:160px;
     padding-bottom: 125px;
+    padding-top:160px;
     background:rgb(245,252,253) !important;
 }
+.n-fone-1{
+    background:url("img/n_fone_1.png") no-repeat;
+    width:70px;
+    height:70px;
+    margin:-55px auto;
+}
+.n-fone-2{
+    background:url("img/n_fone_2.png") no-repeat;
+    width:70px;
+    height:70px;
+    margin-left:40px;
+}
+
 .how-work__square_white{
     width:72px;
     height: 72px;
@@ -348,7 +408,7 @@ ul, li{
 .how-work__line_blue{
     top:36px;
     z-index:0;
-    border-bottom:2px solid rgb(15,123,255,0.2)
+    border-bottom:2px dotted rgb(15,123,255,0.4)
 }
 
 /* how work end */
@@ -380,6 +440,16 @@ ul, li{
     background:rgb(15,123,255);
     color:white !important;
 }
+.circle{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    margin:0 auto;
+    background:rgb(15,123,255,0.2);
+    position:absolute;
+    top:10px;
+    left:10px;
+}
 .pricing__card{
     box-shadow: 0px 0px 48px -30px rgba(0,0,0,0.75);
     text-align: center;
@@ -403,6 +473,8 @@ ul, li{
 }
 .dollar{
     font-size:16px;
+    color:rgb(15,123,255);
+    font-weight:600;
 }
 /* pricing end */
 
@@ -467,6 +539,7 @@ ul, li{
 .news__img{
     width:100%;
     height:100%;
+    min-height:100px;
     background-size:cover;
 }
 
@@ -590,10 +663,15 @@ footer{
     font-size:18px;
     font-weight: 500;
 }
-
+.arrow{
+    font-size:20px;
+}
 .footer__links a{
     color:white;
     margin-left:20px;
+}
+.footer__links a:hover{
+    text-decoration:underline;
 }
 .footer__copyright{
     padding-top:45px;
