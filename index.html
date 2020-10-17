@@ -12,15 +12,15 @@
 
     <div class="header__background">
         <header id="home">
-            <div class="container-fluid">
-                <div class="row">
-                     <div class="col-2 ml-0 ml-sm-5">
+            <div class="container-header">
+                <div class="row justify-content-between">
+                     <div class="col-2">
                          <div class="header__logo">
                             <p>AppSon</p>
                          </div>
                      </div>
                      
-                     <div class="col-8 ml-5 align-self-center">
+                     <div class="col-8 col-lg-7 ml-5 pr-0 pr-lg-4  align-self-center">
                          <nav>
                              <ul class="menu d-block d-lg-flex justify-content-end">
                                  <li anchor="home" class="menu__item"><a href="#home">HOME</a></li>
@@ -28,7 +28,7 @@
                                  <li anchor="pricing" class="menu__item"><a href="#pricing">PRICING</a></li>
                                  <li anchor="pages" class="menu__item"><a href="#pages">PAGES</a></li>
                                  <li class="menu__item">
-                                     <button class="button button-blue header__button">SIGN UP</button>
+                                     <button class="button text-nowrap header__button">SIGN UP</button>
                                 </li>
                              </ul>
                              <div class="menu__item burger">&#9776;</div>
@@ -42,24 +42,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Best Desktop App for You</h1>
-                        <p class="home__text mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quaerat numquam molestiae veritatis reiciendis ex, fugit, enim saepe dolorum, et repudiandae quisquam pariatur ipsa dolore asperiores aliquam obcaecati praesentium placeat! Saepe deserunt facilis tempore aspernatur dignissimos! Repudiandae, quod, distinctio optio similique magnam repellendus corporis ea ab tenetur, quam maiores ipsum!</p>
-                        <button class="button button-blue mr-2 mt-4">Download</button>
-                        <button class="button button-transparent ml-2 mt-4">Free Trial</button>
+                        <h1 class="font-weight-bold">Best Desktop App for You</h1>
+                        <p class="home__text mt-4">ipsa dolore asperiores aliquam obcaecati praesentium placeat! Saepe deserunt facilis tempore aspernatur dignissimos! Repudiandae, quod, distinctio optio similique magnam repellendus corporis ea ab tenetur, quam maiores ipsum!</p>
+                        <button class="button button-blue mr-2 mt-5">Download</button>
+                        <button class="button button-transparent ml-2">Free Trial</button>
                     </div>
 
-                    <div class="row justify-content-center home__mobile-screens">
-                        <div class="col-3 d-none d-sm-block home__mobile-screen home__mobile-small home__mobile-left">
+                    <div class="row justify-content-center w-100 flex-nowrap home__mobile-screens">
+                        <div class="home__mobile-screen home__mobile-small home__mobile-left">
                             <div class="screen_1"></div>
                         </div>
-                        <div class="col-10 col-sm-6 col-md-5 home__mobile-screen">
+                        <div class="home__mobile-screen home__mobile-big">
                             <div class="screen_2"></div>
                         </div>
-                        <div class="col-3 d-none d-sm-block home__mobile-screen home__mobile-small home__mobile-right">
+                        <div class="home__mobile-screen home__mobile-small home__mobile-right">
                             <div class="screen_3"></div>
                         </div>
                     </div>
 
+                    
                 </div>
             </div>
         </div>
@@ -68,6 +69,14 @@
     
     <div id="features" class="container-fluid features">
         <div class="row justify-content-center">
+            <a href="#features">
+                <div class="bottom-arrow">
+                    <span>
+                        &#8595;
+                    </span>
+                </div>
+            </a>
+            
 
             <div class="col-10 col-lg-3">
                 <div class="card mt-5 mt-lg-0">
@@ -85,7 +94,7 @@
                         <img src="img/icon_card_2.png" width="32" alt="Clear Design"/>
                     </div>
                     <h4 class="mt-3 font-weight-bold">Clear Design</h4>
-                    <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="mt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore voluptatibus </p>
                 </div>
             </div>
 
