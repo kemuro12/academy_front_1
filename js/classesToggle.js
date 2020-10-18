@@ -53,9 +53,10 @@ let formIsValid = false;
 
 document.querySelector(".footer__input").addEventListener("blur", (e) => {
     let emailValidator = /@[\s\S]*\./;
-    let errorMessage = "Некорректная Почта!";
+    let errorMessage = "Email is incorrect!";
     if(!emailValidator.test(e.target.value)) {
         document.querySelector(".footer__error").innerText = errorMessage;
+        e.target.classList.add("footer__error-input")
         formIsValid = false;
     } else {
         document.querySelector(".footer__error").innerText = "";
