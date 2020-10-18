@@ -46,7 +46,12 @@ li{
 .header__background{
     background: url('img/header.png') no-repeat;
     height: 1030px;
-    background-position: 0 100%;
+}
+@media screen and (min-width:2560px){
+    .header__background{
+        width:2560px !important;
+        background-size: 100%;
+    }
 }
 header{
     width:100%;
@@ -107,17 +112,25 @@ ul, li{
 .menu-responsive{
     position: relative;
     top:0;
-    right:-10px;
+    right:-40px;
     height:auto;
     padding:10px 0px;
     background:rgb(15,123,255);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .menu-responsive a{
     display:block !important; 
     color:white;
     font-size:24px;
+}
+@media screen and (max-width:360px){
+    .menu-responsive a{
+        display:block !important; 
+        color:white;
+        font-size:14px;
+    }
 }
 .button{
     padding:9px 42px;
@@ -208,6 +221,17 @@ ul, li{
     width:60%;
     margin:0 auto;
 }
+@media screen and (max-width:372px){
+    .home__free-download-button{
+        width:100%;
+        margin-bottom:10px;
+    }
+    .home__free-trial-button{
+        width:100%;
+        margin:0 auto;
+    }
+}
+
 @media screen and (max-width: 800px){
     .home .home__text{
         width:80%
@@ -604,6 +628,7 @@ ul, li{
 .pricing__actions{
     width:100%;
     display:flex;
+    justify-content:center;
 }
 .pricing__button{
     color:rgb(15,123,255);
@@ -917,6 +942,11 @@ footer{
 @media screen and (max-width:991px){
     .footer__button_block{
         display:block;
+    }
+}
+@media screen and (max-width:480px){
+    .footer__button_block{
+        top:150px;
     }
 }
 .footer__button_up{
