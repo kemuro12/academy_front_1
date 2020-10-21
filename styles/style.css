@@ -6,19 +6,19 @@
 */
 @font-face {
     font-family: "Quicksand regular";
-    src: url("fonts/Quicksand-Regular.ttf");
+    src: url("../fonts/Quicksand-Regular.ttf");
 }
 @font-face {
     font-family: "Quicksand medium"; 
-    src: url("fonts/Quicksand-Medium.ttf"); 
+    src: url("../fonts/Quicksand-Medium.ttf"); 
 }
 @font-face {
     font-family: "Quicksand light";
-    src: url("fonts/Quicksand-Light.ttf");
+    src: url("../fonts/Quicksand-Light.ttf");
 }
 @font-face {
     font-family: "Quicksand bold";
-    src: url("fonts/Quicksand-Bold.ttf");
+    src: url("../fonts/Quicksand-Bold.ttf");
 }   
 .font-regular{ font-family: "Quicksand regular" }
 .font-medium{ font-family: "Quicksand medium" }
@@ -44,7 +44,7 @@ li{
 }
 /* header */
 .header__background{
-    background: url('img/header.png') no-repeat;
+    background: url('../img/header.png') no-repeat;
     height: 1030px;
 }
 @media screen and (min-width:2560px){
@@ -244,7 +244,7 @@ ul, li{
     overflow: hidden;   
 }
 .home__mobile-screen{
-    background-image:url('img/device.png');
+    background-image:url('../img/device.png');
     background-position: 0 0;
     background-size:cover;
     position: relative;
@@ -272,7 +272,7 @@ ul, li{
     top:55px;
     left:55px;
     height:100%;
-    background:url('img/screen_1.png') no-repeat;
+    background:url('../img/screen_1.png') no-repeat;
     background-size:100%;
 }
 .screen_2{
@@ -281,7 +281,7 @@ ul, li{
     top:66px;
     left:64px;
     height:100%;
-    background:url('img/screen_2.png') no-repeat;
+    background:url('../img/screen_2.png') no-repeat;
     background-size:100%;
 }
 .screen_3{
@@ -290,7 +290,7 @@ ul, li{
     top:55px;
     left:44px;
     height:100%;
-    background:url('img/screen_3.png') no-repeat;
+    background:url('../img/screen_3.png') no-repeat;
     background-size:100%;
 }
 
@@ -594,13 +594,13 @@ ul, li{
     width:60%;
 }
 .n-fone-1{
-    background:url("img/n_fone_1.png") no-repeat;
+    background:url("../img/n_fone_1.png") no-repeat;
     width:70px;
     height:70px;
     margin:-55px auto;
 }
 .n-fone-2{
-    background:url("img/n_fone_2.png") no-repeat;
+    background:url("../img/n_fone_2.png") no-repeat;
     width:70px;
     height:70px;
     margin-left:40px;
@@ -717,7 +717,7 @@ ul, li{
     justify-content: space-between;
 }
 .trusted__img{
-    background: url("img/left_img.png") no-repeat;
+    background: url("../img/left_img.png") no-repeat;
     background-size:100% 100%;
 }
 .trusted__cards{
@@ -744,7 +744,7 @@ ul, li{
 
 @media screen and (max-width:991px) {
     .trusted__img_back{
-        background: url("img/left_img.png") no-repeat;
+        background: url("../img/left_img.png") no-repeat;
         background-size:90% 100%;
     }
     .trusted__cards-padding{
